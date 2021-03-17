@@ -1,0 +1,51 @@
+.banner-section, .welcome-section{
+  width: auto;
+  height: auto;
+}
+/*Banner section*/
+.banner-section h1{
+  line-height: 1.5;
+  margin-bottom: 5px !important;
+}
+.banner-section h1:after{
+  content: "";
+  background: url(../images/title-image1.png) no-repeat center;
+  padding: 20px;
+  display: block;
+}
+.banner-section a.wp-block-button__link {
+  color: #fff !important;
+  border: solid 2px #fff;
+  padding: 10px 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/*Welcome section*/
+.welcome-section h2{
+  font-weight: bold !important;
+}
+.welcome-section h2:after{
+  content: "";
+  background: url(../images/title-image2.png) no-repeat left;
+  padding: 20px;
+  display: block;
+}
+.welcome-section .wp-block-buttons.alignleft{
+  border: none !important;
+}
+.welcome-section a.wp-block-button__link{
+  letter-spacing: 2px;
+}
+@media screen and (max-width:767px) {
+  .banner-section h1{
+    font-size: 20px !important;
+  }
+  .banner-section p{
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .banner-section .wp-block-column.is-vertically-aligned-center {
+    flex-basis: 100% !important;
+  }
+}
